@@ -189,12 +189,11 @@ footer p {
   font-family: 'Oswald', sans-serif;
   font-weight:500;
   text-transform:uppercase;
-  text-shadow: 2px 1px 3px black;
   text-align: center;
   color: black;
   text-shadow: 2px 2px 2px lightgray;
   margin:0 15px;
-  font-size:13px;
+  font-size:14px;
   letter-spacing:1px;
   height: 10vh;
   line-height: 2.4;

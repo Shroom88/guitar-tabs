@@ -24,6 +24,6 @@ Rock[i]{display the tab understandable}
 header: dynamic gradient with h1 text
 footer: dynamic gradient with links to social media...?
 
-JS: Search Bar, Metronome, ...?
+JS: Search Bar, Metronome, Form...
 
 
