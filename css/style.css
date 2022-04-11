@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
 body {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background:url(https://wallpapercave.com/wp/wp3145591.jpg) no-repeat top center #efeff1;
-  background-size:cover;
+  background: url(https://wallpapercave.com/wp/wp3145591.jpg) no-repeat top center #efeff1;
+  background-size: cover;
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 header {
@@ -23,20 +24,20 @@ header {
   border-width: 1px;
   border-color: #FFFFFF;
   text-align: center;
-  background-image: linear-gradient(
-    to bottom right,
-    #0D0C0C 0%, #312D2D 40%, #504A4A 60%, #7A7272 100% );
+  background-image: linear-gradient(to bottom right,
+      #0D0C0C 0%, #312D2D 40%, #504A4A 60%, #7A7272 100%);
   background-size: 200% 200%;
   animation: movingGradient 3s linear infinite alternate;
 }
 
 @keyframes movingGradient {
-  from { 
+  from {
     background-position: 0 0;
   }
-  to { 
+
+  to {
     background-position: 100% 100%;
-   }
+  }
 }
 
 
@@ -50,72 +51,79 @@ header h1 {
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-nav{
+nav {
   width: 100%;
   position: fixed;
-  top:100px;
-  text-align:center;
+  top: 100px;
+  text-align: center;
 }
-nav a{
+
+nav a {
   font-family: 'Oswald', sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
-  text-decoration:none;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
   color: lightgray;
-  margin:0 15px;
-  font-size:16px;
-  letter-spacing:1px;
-  position:relative;
-  display:inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
 }
-nav a:before{
-  content:'';
+
+nav a:before {
+  content: '';
   position: absolute;
   width: 100%;
   height: 3px;
-  background:#16151b;
-  top:47%;
-  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
-nav a:hover:before{
-  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 
 }
-@keyframes in{
-  0%{
+
+@keyframes in {
+  0% {
     width: 0;
-    left:0;
-    right:auto;
+    left: 0;
+    right: auto;
   }
-  100%{
-    left:0;
-    right:auto;
+
+  100% {
+    left: 0;
+    right: auto;
     width: 100%;
   }
 }
-@keyframes out{
-  0%{
-    width:100%;
+
+@keyframes out {
+  0% {
+    width: 100%;
     left: auto;
     right: 0;
   }
-  100%{
+
+  100% {
     width: 0;
     left: auto;
     right: 0;
   }
 }
 
-.valid{
+.valid {
   opacity: 0.2;
 }
 
@@ -125,7 +133,62 @@ nav a:hover:before{
   color: black;
 }
 
+article {
+  margin-top: 170px;
+  margin-left: -9px;
+  background: rgba(138, 136, 136, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
 
+section {
+  position: relative;
+  width: 100vh;
+  height: 100%;
+}
+
+section h2 {
+  margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 33px;
+  color: rgb(24, 24, 24);
+  text-shadow: 3px 3px 2px lightgray;
+  user-select: none;
+}
+
+section p {
+  margin-left: 7px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 1px rgb(54, 54, 54);
+  user-select: none;
+}
+
+section a {
+  color: #cccccc;
+  text-shadow: 2px 2px 3px #7A7272;
+  text-decoration: underline;
+}
+
+section img {
+  position: relative;
+  margin-left: 70px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+}
 
 .container {
   padding-top: 170px;
@@ -142,60 +205,62 @@ nav a:hover:before{
   margin: 0 1%;
   margin-bottom: 7vh;
   margin-right: 2vw;
-  box-shadow: 0 30px 40px rgba(0,0,0,.5);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, .5);
   line-height: 0;
 }
 
 .box img {
   width: 200%;
   height: calc(100% - 20vh);
-  object-fit: cover; 
+  object-fit: cover;
   transition: .5s;
 }
 
 .box span {
   font-family: 'Oswald', sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
+  font-weight: 500;
+  text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
   color: white;
-  margin:0 15px;
-  font-size:15px;
-  letter-spacing:1px;
+  margin: 0 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
   line-height: 2.3;
 }
 
-.box:hover { flex: 1 1 20%; }
+.box:hover {
+  flex: 1 1 20%;
+}
+
 .box:hover img {
   width: 100%;
   height: 100%;
 }
 
-footer{
-    position: absolute;
-    left: -10px;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-    background-image: linear-gradient(
-      to bottom right,
-      #0D0C0C 0%, #312D2D 40%, #504A4A 60%, #7A7272 100% );
-    background-size: 200% 200%;
-    animation: movingGradient 3s linear infinite alternate;
+footer {
+  position: absolute;
+  left: -9px;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  background-image: linear-gradient(to bottom right,
+      #0D0C0C 0%, #312D2D 40%, #504A4A 60%, #7A7272 100%);
+  background-size: 200% 200%;
+  animation: movingGradient 3s linear infinite alternate;
 }
 
 footer p {
   font-family: 'Oswald', sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
+  font-weight: 500;
+  text-transform: uppercase;
   text-align: center;
   color: black;
   text-shadow: 2px 2px 2px lightgray;
-  margin:0 15px;
-  font-size:14px;
-  letter-spacing:1px;
+  margin: 0 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
   height: 10vh;
   line-height: 2.4;
 }
