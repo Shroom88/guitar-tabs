@@ -4,12 +4,14 @@ body {
     font-family: 'Oswald', sans-serif;
     user-select: none;
 }
+
 .metrocontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .metronome {
     display: flex;
     flex-direction: column;
@@ -20,6 +22,7 @@ body {
     border-radius: 110px 19px;
     box-shadow: 10px 10px 5px #131111;
 }
+
 .bpm-display {
     width: 100%;
     text-align: center;
@@ -27,9 +30,11 @@ body {
     text-shadow: 5px 5px 2px lightgray;
     font-weight: bold;
 }
+
 .bpm-display .tempo {
     font-size: 4em;
 }
+
 .tempo-text {
     font-size: .8em;
     text-transform: uppercase;
@@ -52,13 +57,16 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
 .tempo-settings .adjust-tempo-btn:hover {
     background: #9b9797;
     color: #fff;
 }
+
 .tempo-settings .decrease-tempo {
     line-height: 25px;
 }
+
 .tempo-settings .increase-tempo {
     line-height: 32px;
 }
@@ -68,9 +76,11 @@ input[type=range] {
     background-color: transparent;
     width: 70%;
 }
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
+
 input[type=range]:focus {
     outline: none;
 }
@@ -84,6 +94,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     margin-top: -8px;
 }
+
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
     width: 16px;
@@ -122,10 +133,12 @@ input[type=range]::-moz-range-track {
 .start-stop:hover {
     background: #9b9797;
 }
+
 .measures {
     display: flex;
     justify-content: center;
 }
+
 .measures .stepper {
     width: 20px;
     height: 20px;
@@ -135,10 +148,12 @@ input[type=range]::-moz-range-track {
     margin: 0 5px;
     cursor: pointer;
 }
+
 .measures .stepper:hover {
     background: #9b9797;
     color: #fff;
 }
+
 .measures .add-beats {
     line-height: 20px;
 }

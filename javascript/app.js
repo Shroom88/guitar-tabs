@@ -67,6 +67,7 @@ function updateMetronome() {
     tempoDisplay.textContent = bpm;
     tempoSlider.value = bpm;
     metronome.timeInterval = 60000 / bpm;
+    //ranges
     if (bpm <= 40) { tempoTextString = "Super Slow" };
     if (bpm > 40 && bpm < 80) { tempoTextString = "Slow" };
     if (bpm > 80 && bpm < 120) { tempoTextString = "Getting there" };
@@ -74,7 +75,7 @@ function updateMetronome() {
     if (bpm > 180 && bpm < 220) { tempoTextString = "Rock n' Roll" };
     if (bpm > 220 && bpm < 240) { tempoTextString = "Funky Stuff" };
     if (bpm > 240 && bpm < 260) { tempoTextString = "Relax Dude" };
-    if (bpm > 260 && bpm <= 280) { tempoTextString = "Eddie Van Halen" };
+    if (bpm > 260 && bpm <= 280) { tempoTextString = "SURF ROCK!!" };
 
     tempoText.textContent = tempoTextString;
 }

@@ -1,7 +1,6 @@
 function progress() {
   alert("Page still in progress.");
   console.log("Hello World.");
-  // Ello
 }
 
 //Carousel
@@ -19,7 +18,7 @@ function resetImg() {
 
   image.src = images[currentPos];
 }
-setInterval(resetImg, 3000);
+setInterval(resetImg, 4000);
 
 
 // Contacts Submit Form
