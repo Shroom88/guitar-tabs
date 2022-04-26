@@ -12,12 +12,12 @@ body {
 }
 
 .metronome {
-    margin-top: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #313131;
-    border-radius: 20px 20px;
+    background-color: #686868;
+    border-radius: 20px 50px;
     box-shadow: 10px 10px 5px #131111;
 }
 
