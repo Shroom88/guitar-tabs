@@ -9,17 +9,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .metronome {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 250px;
     justify-content: space-between;
     background-color: #313131;
-    border-radius: 110px 19px;
+    border-radius: 20px 20px;
     box-shadow: 10px 10px 5px #131111;
 }
 
@@ -32,11 +30,11 @@ body {
 }
 
 .bpm-display .tempo {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .tempo-text {
-    font-size: .8em;
+    font-size: .7em;
     text-transform: uppercase;
     color: #131111;
     text-shadow: 1px 1px 1px lightgray;
@@ -49,9 +47,9 @@ body {
 }
 
 .tempo-settings .adjust-tempo-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 27px;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
     border-radius: 50%;
     border: 1px solid #ddd;
     text-align: center;
@@ -64,11 +62,11 @@ body {
 }
 
 .tempo-settings .decrease-tempo {
-    line-height: 25px;
+    line-height: 16px;
 }
 
 .tempo-settings .increase-tempo {
-    line-height: 32px;
+    line-height: 20px;
 }
 
 input[type=range] {
@@ -87,8 +85,8 @@ input[type=range]:focus {
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #9b9797;
     cursor: pointer;
@@ -97,8 +95,8 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #9b9797;
     cursor: pointer;
@@ -118,14 +116,14 @@ input[type=range]::-moz-range-track {
 }
 
 .start-stop {
-    width: 50px;
-    height: 50px;
-    font-size: 0.7em;
+    width: 45px;
+    height: 45px;
+    font-size: 0.6em;
     text-align: center;
     background: #9b9797;
     border-radius: 50%;
     color: #131111;
-    line-height: 50px;
+    line-height: 45px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -140,12 +138,13 @@ input[type=range]::-moz-range-track {
 }
 
 .measures .stepper {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 1px solid #ddd;
     text-align: center;
     margin: 0 5px;
+    line-height: 15px;
     cursor: pointer;
 }
 
@@ -155,12 +154,12 @@ input[type=range]::-moz-range-track {
 }
 
 .measures .add-beats {
-    line-height: 20px;
+    line-height: 15px;
 }
 
 .beats-per-measure-text {
     text-align: center;
     color: #c4bfbf;
-    font-size: 0.5em;
+    font-size: 0.3em;
     text-transform: uppercase;
 }

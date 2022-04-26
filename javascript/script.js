@@ -3,14 +3,14 @@ function progress() {
   console.log("Hello World.");
 }
 
-//Carousel
+// Slider loop
 var image = document.getElementById("icarousel");
 var currentPos = 0;
 var images = ["res/HereComesTheSun.jpg",
- "res/perfect.jpg", 
- "res/summertime.jpg", 
- "res/grantchestermeadows.jpg", 
- "res/mushroom1.png"]
+  "res/perfect.jpg",
+  "res/summertime.jpg",
+  "res/grantchestermeadows.jpg",
+  "res/mushroom1.png"]
 
 function resetImg() {
   if (++currentPos >= images.length)
