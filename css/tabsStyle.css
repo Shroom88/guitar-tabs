@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .tabWrap {
-    padding: 10px;
-    margin-top: 130px;
+    position: fixed;
     margin-left: -12px;
+    margin-top: 150px;
     overflow: auto;
-    height: 70%;
+    height: 68%;
     width: 100%;
     background: rgba(255, 255, 255, 0.49);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -33,6 +29,11 @@ body {
     outline: 1px solid slategrey;
 }
 
+hr {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+
+
 .button-6 {
     align-items: center;
     background-color: #FFFFFF;
@@ -50,6 +51,7 @@ body {
     justify-content: center;
     line-height: 1.25;
     margin: 10px;
+    left: 38%;
     min-height: 3rem;
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
     position: relative;

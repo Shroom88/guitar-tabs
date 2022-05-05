@@ -2,12 +2,14 @@
 
 body {
   position: fixed;
+  display: flex;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(https://wallpapercave.com/wp/wp3145591.jpg) no-repeat top center #efeff1;
+  background: url(https://wallpapercave.com/wp/wp3145591.jpg) no-repeat top center #efeff1 fixed;
   background-size: cover;
+
 }
 
 header {
@@ -173,10 +175,11 @@ section a {
 }
 
 section img {
-  position: relative;
-  margin-left: 70px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius: 20px 50px;
+  border: 5px solid rgba(255, 255, 255, 0.6);
   width: 100%;
   height: 100%;
 }
@@ -207,7 +210,7 @@ section img {
   transition: .5s;
 }
 
-.box a{
+.box a {
   text-decoration: none;
 }
 
@@ -233,12 +236,12 @@ section img {
 }
 
 footer {
-  position: absolute;
-  left: -9px;
+  position:fixed;
+  left: 0;
   bottom: 0;
   height: 40px;
   width: 100%;
-  overflow: hidden;
+  overflow:hidden;
   user-select: none;
   background-image: linear-gradient(to bottom right,
       #0D0C0C 0%, #312D2D 40%, #504A4A 60%, #7A7272 100%);
@@ -258,4 +261,34 @@ footer p {
   letter-spacing: 1px;
   height: 10vh;
   line-height: 2.4;
+}
+
+.thankyou {
+  margin-top: 260px;
+  margin-left: -10px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #cccccc;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.thankyou a {
+  color: #328080;
+  text-decoration: none;
+}
+
+.thankyou a:hover {
+  color: #145233;
+  text-decoration: none;
 }

@@ -20,7 +20,6 @@
         <a href="rock.html">Rock</a>
         <a href="jazz.html">Jazz</a>
         <a href="popular.html">Popular</a>
-        <a href="metronome.html">Metronome</a>
         <a href="contacts.html" class="current">Contacts</a>
     </nav>
 
@@ -30,7 +29,8 @@
         <div class="contact-wrapper">
 
 
-            <form id="contact-form" class="form-horizontal" role="form">
+            <form action="https://formsubmit.co/gabrielslim153@gmail.com" method="POST" id="contact-form"
+                class="form-horizontal" role="form">
                 <div class="form-group">
                     <div class="col-sm-12">
                         <h2>Please, fill out the form: </h2>
@@ -61,6 +61,9 @@
                         </select>
                     </div>
                 </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thankyou.html">
+                <input type="hidden" name="_subject" value="New submission from GuitarTabs Contacts Page!">
 
                 <textarea class="form-control" rows="3" placeholder="MESSAGE" name="message" required></textarea>
 
