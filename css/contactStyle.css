@@ -220,7 +220,7 @@ hr {
     border-color: rgba(255, 255, 255, .6);
 }
 
-/* Begin Media Queries*/
+/* responsive contact container */
 @media screen and (max-width: 850px) {
     body {
         width: 100vw;

@@ -1,9 +1,9 @@
 function progress() {
   alert("Page still in progress.");
-  console.log("Hello World.");
+  console.log("JS file working fine.");
 }
 
-// Slider loop
+// Slick Slider loop
 
 $('#icarousel').slick({
   autoplay: true,
